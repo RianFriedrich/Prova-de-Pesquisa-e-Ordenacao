@@ -1,0 +1,35 @@
+package Pacote;
+
+import java.util.ArrayList;
+
+public class Exercicio_5 {
+	ArrayList[] lista = new ArrayList[10];
+	ArrayList[] listaOrdenada = new ArrayList[10];
+	int quantOrdenada = 0;
+	boolean resultado;
+	public void verificarOrdenacao() {
+		for(int i = 0; i<=lista.length; i++) {
+			if(lista[i] == listaOrdenada[i]) {
+				quantOrdenada++;
+			}
+			if(quantOrdenada = 10) {
+				retornacao();
+			}
+			
+		}
+	}
+	
+	
+	public boolean retornacao() {
+		if(quantOrdenada = 10) {
+			return resultado = true;
+		}
+		else {
+			return resultado = false;
+		}
+		
+	}
+	
+	
+
+}
